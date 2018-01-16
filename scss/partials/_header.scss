@@ -1,0 +1,360 @@
+.header {
+    overflow: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('./../images/sandpaper2.png');
+    background-repeat: repeat repeat;
+    /* Background pattern from Subtle Patterns */
+}
+.bar1 {
+    height: inherit;
+    width: 45%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #000;
+    transform: translateX(-115%) rotateZ(360deg);
+    -webkit-clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    animation: hound 1s ease-in-out forwards;
+    will-change: transform;
+
+    @media screen and (max-width: 400px){
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+}
+.bar2 {
+    height: inherit;
+    width: 45%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #474747;
+    transform: translateX(-115%) translateY(-100vh) rotateZ(360deg);
+    -webkit-clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    animation: hound2 1s ease-in-out .5s forwards;
+    will-change: transform;
+
+    @media screen and (max-width: 400px){
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+}
+
+.hound-bar {
+    height: inherit;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('./../images/Hound.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hound-position-start {
+    transform: translateX(-105%) translateY(-202vh) rotateZ(360deg) scale(1.1);
+    -webkit-clip-path: polygon(35% 0%, 80% 0%, 68% 100%, 15% 100%);
+    clip-path: polygon(35% 0%, 80% 0%, 68% 100%, 15% 100%);
+    animation: hound3 1s ease-in-out 1s forwards;
+    will-change: transform;
+
+    // @media screen and (max-width: 400px){
+    //     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    //     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    // }
+}
+
+.hound-position-final {
+    background-position: top;
+    height: 58vh;
+    max-height: 58vh;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    transform: translateY(-7rem);
+    animation: hound-right 1s ease-in-out;
+
+    @media screen and (max-width: 400px){
+        background-position: center;
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    }
+}
+
+.bar3 {
+    height: inherit;
+    width: 45%;
+    margin: 0 auto;
+    position: relative;
+    background-color: $lannister-red;
+    transform: translateX(-115%) rotateZ(360deg);
+    -webkit-clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    animation: hound .75s ease-in-out forwards;
+    will-change: transform;
+}
+.bar4 {
+    height: inherit;
+    width: 45%;
+    margin: 0 auto;
+    position: relative;
+    background-color: $lannister-gold;
+    transform: translateX(-115%) translateY(-100vh) rotateZ(360deg);
+    -webkit-clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+    animation: hound2 .75s ease-in-out .5s forwards;
+    will-change: transform;
+}
+
+.mountain-bar {
+    height: inherit;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('./../images/Mountain.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mountain-position-start {
+    transform: translateX(-105%) translateY(-202vh) rotateZ(360deg) scale(1.1);
+    -webkit-clip-path: polygon(35% 0%, 80% 0%, 68% 100%, 15% 100%);
+    clip-path: polygon(35% 0%, 80% 0%, 68% 100%, 15% 100%);
+    animation: hound3 .75s ease-in-out 1s forwards;
+    will-change: transform;
+
+    // @media screen and (max-width: 400px){
+    //     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    //     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    // }
+}
+
+.mountain-position-final {
+    background-position: 0% 25%;
+    height: 55vh;
+    max-height: 55vh;
+    animation: mountain-left 1s ease-in-out;
+
+    @media screen and (max-width: 400px){
+        background-position: center;
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    } 
+}
+
+.hound {
+    padding-left: 5rem;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    color: #000;
+    font-size: 15rem;
+    font-family: $ff-header;
+    z-index:999;
+
+    @media screen and (max-width: 450px){
+        padding-left: 2rem;
+        padding-bottom: 6rem;
+        font-size: 6rem;
+    }
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.promo-logo {
+    max-height: 45rem;
+    align-self: center;
+    position: absolute;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out 1s forwards;
+    @media screen and (max-width: 400px){
+        padding-bottom: 15rem;
+        max-width: 25rem;
+    }
+}
+
+.promo-text {
+    position: absolute;
+    align-self: center;
+    padding-top: 20rem;
+    z-index: 999;
+    opacity: 0;
+    color: rgba(200,200,200,0.75);
+    font-family: $ff-header;
+    font-size: 7rem;
+    text-align: center;
+    animation: fade-in 1s ease-in-out 1s forwards;
+
+    @media screen and (max-width: 400px){
+        padding-bottom: 5rem;
+        font-size: 5rem;
+    }
+}
+
+// TODO - GROUP DIVS TO DRY UP CODE
+
+.hound-div{
+    overflow: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    transition: opacity 1s ease-in-out;
+}
+
+.mountain-div{
+    overflow: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    transition: opacity 1s ease-in-out;
+}
+
+.final-div {
+    height: 100%;
+    // min-height: 100vh;
+    // max-height: 100vh;
+    position: relative;
+    overflow: hidden
+
+    &::after {
+        content: '';
+        position:absolute;
+        left:0; top: 0;
+        width: 100%;
+        height: inherit;
+        opacity: 0;
+        background-color: rgba(0,0,0,0.35);
+        animation: fade-in 1s ease-in-out 1s forwards;
+    }
+}
+
+.vs {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.vs-text {
+    font-size: 20rem;
+    font-family: $ff-header;
+    color: #000;
+    align-self: center;
+}
+
+.cta-box{
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    bottom: 3rem;
+    padding: 1.5rem 2rem;
+    background-color: #fdd037;
+    background-image: url('./../images/sandpaper2.png');
+    /* Background pattern from Subtle Patterns */
+    z-index: 999;
+    opacity: 0;
+    color: #000;
+    font-family: $ff-header;
+    font-size: 3rem;
+    animation: fade-in 1s ease-in-out 1s forwards;
+
+    @media screen and (max-width: 450px){
+        margin-bottom: 7rem;
+    }
+}
+
+.fade {
+    animation: faded 1s ease-in-out 1s forwards;
+}
+
+.texted {
+    animation: punch .50s ease-in-out forwards;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes hound {
+    from {
+        
+    }
+    to {
+        transform: translateX(75%);
+    }
+}
+
+@keyframes hound2 {
+    from {
+        
+    }
+    to {
+        transform: translateX(50%) translateY(-100vh);
+    }
+}
+@keyframes hound3 {
+    from {
+        
+    }
+    to {
+        transform: translateX(0) translateY(-201vh) scale(1.1);
+    }
+}
+
+@keyframes faded{
+    from {
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes punch {
+    from {
+        transform: scale(3);
+        text-shadow: -44px -23px 16px rgba(0,0,0,0.5);
+    }
+    to{
+        transform: scale(1);
+        text-shadow: -4px 4px 16px rgba(0,0,0,0.5);
+    }
+}
+
+@keyframes mountain-left {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hound-right {
+    from {
+        transform: translateX(-150%) translateY(-7rem);
+    }
+    to {
+        transform: translateX(0) translateY(-7rem);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
